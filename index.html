@@ -1,32 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositório Simples</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitetura Moderna</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Meu Repositório</h1>
-    </header>
-    
-    <main>
-        <input type="text" id="itemInput" placeholder="Adicione um item...">
-        <button id="addButton">Adicionar</button>
-
-        <table id="itemTable">
-            <thead>
-                <tr>
-                    <th>Item</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Itens serão adicionados aqui -->
-            </tbody>
-        </table>
-    </main>
-
-    <script src="script.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="sobre">
+      <h1>Sobre</h1>
+      <p>Este site apresenta projetos de arquitetura moderna.</p>
+    </section>
+    <section id="projetos">
+      <h1>Projetos</h1>
+      <div class="projeto">
+        <img src="projeto1.jpg" alt="Projeto 1">
+        <h2>Projeto 1</h2>
+        <p>Descrição do projeto.</p>
+      </div>
+      <div class="projeto">
+        <img src="projeto2.jpg" alt="Projeto 2">
+        <h2>Projeto 2</h2>
+        <p>Descrição do projeto.</p>
+      </div>
+    </section>
+    <section id="contato">
+      <h1>Contato</h1>
+      <form>
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="E-mail">
+        <textarea placeholder="Mensagem"></textarea>
+        <button>Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 Arquitetura Moderna
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
